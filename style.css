@@ -421,26 +421,6 @@ footer {
 
 /* Estilos para tablet */
 @media (min-width: 768px) {
-  .faqs-container {
-    gap: 30px;
-  }
-
-  .footer-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .hero-container {
-    flex-wrap: nowrap;
-
-    & h1 {
-      font-size: 40px;
-    }
-
-    & p {
-      font-size: 18px;
-    }
-  }
-
   .btn-nav {
     display: none;
   }
@@ -452,6 +432,18 @@ footer {
       & a {
         color: var(--paragraph-color);
       }
+    }
+  }
+
+  .hero-container {
+    flex-wrap: nowrap;
+
+    & h1 {
+      font-size: 40px;
+    }
+
+    & p {
+      font-size: 18px;
     }
   }
 
@@ -474,14 +466,18 @@ footer {
   .testimonials-list {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .faqs-container {
+    gap: 30px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Estilos para desktop small */
 @media (min-width: 1024px) {
-  .faqs-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
-  }
 
   .services-list {
     grid-template-columns: repeat(3, 1fr);
@@ -497,6 +493,11 @@ footer {
 
   .testimonials-list {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .faqs-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
   }
 }
 
