@@ -12,6 +12,12 @@ body {
   font-family: "Urbanist", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 details {
   padding: 20px;
   background-color: var(--white);
@@ -25,12 +31,6 @@ footer {
   & h2 {
     color: var(--white);
   }
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 h1 {
@@ -62,10 +62,10 @@ img {
   max-width: 100%;
 }
 
-/* main {
+main {
   max-width: 1280px;
   margin: 0 auto;
-} */
+}
 
 nav {
   padding: 20px 0;
@@ -135,7 +135,7 @@ ul {
 .btn-primary {
   background-color: var(--primary-color);
   border-radius: 25px;
-  box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 12%);
+  box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 39%);
   color: var(--white);
   display: block;
   height: fit-content;
@@ -150,45 +150,13 @@ ul {
   padding: 0 15px;
 }
 
-.faqs {
-  background-color: var(--gray);
-  padding: 50px 0 100px;
-
-  & h2,
-  & p {
-    margin-bottom: 20px;
-  }
-}
-
-.faqs-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 80px;
-}
-
-.faqs-item {
-  box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 12%);
-  cursor: pointer;
-}
-
-.faqs-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.footer-container {
-  align-items: center;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-
-  & .btn-primary {
-    justify-self: center;
-  }
-}
-
+/* Hero styles */
 .hero {
   padding: 60px 0;
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap;*/
+  gap: 30px;
 
   & h1 {
     margin-bottom: 20px;
@@ -202,12 +170,12 @@ ul {
   }
 }
 
-.hero-container {
+/* .hero-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 30px;
-}
+} */
 
 /* Projects styles */
 .projects {
@@ -398,6 +366,7 @@ ul {
 .testimonials-item {
   background-color: var(--white);
   padding: 20px;
+  border-radius: 20px;
 
   & p {
     font-size: 18px;
@@ -412,6 +381,45 @@ ul {
 
   & img {
     max-width: 70px;
+  }
+}
+
+/* Faqs styles */
+.faqs {
+  background-color: var(--gray);
+  padding: 50px 0 100px;
+
+  & h2,
+  & p {
+    margin-bottom: 20px;
+  }
+}
+
+.faqs-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 80px;
+}
+
+.faqs-item {
+  box-shadow: 1px 0.1rem 0.5rem 0px rgb(60 60 60 / 12%);
+  cursor: pointer;
+}
+
+.faqs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Footer styles */
+.footer-container {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  & .btn-primary {
+    justify-self: center;
   }
 }
 
